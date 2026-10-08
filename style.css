@@ -1,0 +1,287 @@
+/* Main Styles */
+body {
+    background-color: var(--color-white);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-dark-red);
+}
+
+h1 {
+    font-size: 36px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: var(--color-dark-red);
+}
+
+/*--------------------------------------------------------------*/
+
+/* Hero Content (GLOBAL) */
+.herocontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------*/
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--color-light-red);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+}
+
+.navbar a {
+    color: var(--color-white);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0;
+}
+
+.navbar-right a:active {
+    color: var(--color-dark-red);
+}
+
+/*--------------------------------------------------------------*/
+
+/* Footer */
+.footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer p {
+    color: var(--color-grey);
+}
+
+footer {
+    margin-top: auto;
+}
+
+/*--------------------------------------------------------------*/
+
+/* Profile */
+.profile {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.profile img {
+    width: 285px;
+    height: 214px;
+}
+
+.biography {
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.biography p {
+    margin: 0 0 1.25em;
+    color: var(--color-dark-red);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.biography p:last-child {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------*/
+
+/* About Content & Resume Content */
+.about-content,
+.resume-content {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.basic-info,
+.favorites {
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+/* Basic Information */
+.basic-info p {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    margin: 10px 0;
+    text-align: left;
+    padding: 5px;
+    color: var(--color-dark-red);
+}
+
+/* Favorites */
+.favorites p {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    margin: 10px 0;
+    text-align: left;
+    padding: 5px;
+    color: var(--color-dark-red);
+}
+
+/*--------------------------------------------------------------*/
+
+/* Services */
+.services-content {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.talents,
+.skills {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.talents p,
+.skills p {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    margin: 10px 0;
+    color: var(--color-dark-red);
+}
+
+.talent-images {
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.talent-images img {
+    width: 285px;
+    height: 214px;
+}
+
+.skill-images {
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-images img {
+    width: 285px;
+    height: 214px;
+}
+
+/*--------------------------------------------------------------*/
+
+/* Testimonials */
+.testimonial-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial-content h1 {
+    color: var(--color-dark-red);
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.quote-card {
+    padding: 30px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-light-red);
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(76, 16, 16, 0.15);
+
+    text-align: left;
+}
+
+.quote-card::before {
+    content: "“";
+    display: block;
+
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 30px;
+
+    color: var(--color-yellow);
+}
+
+.quote-text {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+
+    color: var(--color-dark-red);
+}
+
+.author {
+    margin-top: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    color: var(--color-grey);
+}
+
+/*--------------------------------------------------------------*/
+
+/* Color Palette */
+:root {
+    --color-dark-red: #4C1010;
+    --color-white: #FFF8F0;
+    --color-grey: #B1A7A6;
+    --color-yellow: #E08F3E;
+    --color-light-red: #9E2A2B;
+}
